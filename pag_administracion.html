@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pag_administracion.css">
+</head>
+<body>
+
+
+
+<!-- Header -->
+<div class="header">
+     <div>        
+        <img id="logo" src="imagenes/logomig.png" alt="logo">
+    </div>
+    <!-- Buscador -->
+    <div id="buscador">
+        <form action="" method="get">   
+                <input type="text" name="busqueda" size="20" />
+                <input type="submit" name="botonbuscar" value="Buscar" />
+        </form>
+    </div> <!-- /buscador -->
+    <img id="foto" src="imagenes/colegio2.png" alt="">
+  
+  
+</div>
+
+<!-- NAVEGADOR -->
+<div class="navbar">
+  <a href="index.html">INICIO</a>
+  <a href="#">PROFESORES</a>
+  <a href="#">ALUMNOS</a>
+  <a id="admin" href="#">ADMINISTRACION   
+</a>
+</div>
+
+
+
+<!-- PRINCIPAL -->
+<main>
+  <div class="principal">
+    <h2>ADMINISTRACION</h2>   
+    
+    <div class="cajadecajas" >      
+      <div class="navregistro">
+        <a href="#">modulos</a>
+        <a href="#">alumnos</a>
+        <a href="#">profesores</a>
+      </div>
+      <div class="caja">
+        <div class="acciones">
+          <a href="#">REGISTRAR</a>
+          <a href="#">ELIMINAR</a>
+          <a href="#">VISUALIZAR</a>
+        </div>
+        <div class="alumno">
+          <form action="#">
+            <h3>REGISTRO ALUMNO</h3><br>
+            <table>              
+              <tr><td class="dato">nombre</td><td><input class="input" type="text" size="30%"></td></tr>
+              <tr><td class="dato">apellido</td></td><td><input class="input" type="text" size="30%"></td></tr>
+              <tr><td class="dato">telefono</td></td><td><input class="input" type="text" size="30%"></td></tr>
+              <tr><td class="dato">mail</td></td><td><input class="input" type="text" size="30%"></td></tr>
+            </table>
+          </form>
+        </div>
+        <div class="modulo">
+          <form action="#">
+            <h3>ASIGNACION MODULO</h3><br>
+            <table>
+              <tr><td class="dato">ciclo</td></td><td><select name="modulos" id="">
+                <option value="modulo1">2020-2021</option>
+                <option value="modulo2">2019-2020</option>
+              </select></td></tr>
+              <tr><td class="dato">curso</td></td><td><select name="modulos" id="">
+                <option value="modulo1">primero</option>
+                <option value="modulo2">segundo</option>
+              </select></td></tr>
+              <tr><td class="dato">modulo</td></td><td><select name="modulos" id="">
+                <option value="modulo1">diseño aplicaciones web</option>
+                <option value="modulo2">modulo</option>
+              </select></td></tr>
+            </table>
+          </form>          
+        </div>
+        <div class="enviar"><input class="enviar" type="submit" value="GUARDAR CAMBIOS"></div>
+      </div>      
+    </div><br>
+  </div>
+</main>
+
+
+<!-- Footer -->
+<div class="footer">
+  <div>        
+    <img src="imagenes/logopeque.png" alt="logo">
+  </div>
+  <div><h3>grupo</h3><p>cosa1</p><p>cosa2</p></div>
+  <div><h3>siguenos</h3><p>cosa1</p><p>cosa2</p></div>
+  <div><h3>contacto</h3><p>cosa1</p><p>cosa2</p></div>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body {  
+  width: 100%;
+  max-width: 1200px;
+  font-family: Arial;  
+  margin: 0;
+  background-image: url(imagenes/fondo2.jpg);
+}
+
+/* HEADER */
+.header {
+  height: 100px;
+  text-align: left;
+  padding-left: 50px;
+  background: #262739;  
+  color: #F2B632;
+  display: flex;
+  justify-content: space-between;
+}
+.header div:first-of-type {
+  min-width: 200px;
+}
+#logo{
+  width: 180px;
+}
+#buscador {
+  align-self: center;
+}
+#foto {
+  width: 500px;
+  background: #F1F1F1;
+
+}
+
+/* BARRA NAVEGACION */
+.navbar {
+  display: flex;
+  background-color: #333;
+  font-size: .8em;
+}
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: #F2B632;
+  color: black;
+}
+
+/*PANELES SUPERIORES*/
+.panelacceso {
+  width: 100%;
+  background-color: #677077;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 300px;  
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+ .botonacceso {
+  text-align: center;
+  border-radius: 5%;
+  min-width: 150px;
+  max-width: 250px;
+  margin: 20px;
+  color: #373F5E;
+  background-color: #F1F1F1;
+  width: 250px;
+  padding: 10px;
+}
+.colorfondo {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;  
+  border: 5px solid #F2B632;
+  background-color: #F1F1F1;
+}
+.botonacceso:hover{
+  background-color: #373F5E
+}
+.panelacceso h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  height: 10%;  
+}
+.botonacceso img {
+  text-align: center;
+  width: 110px;
+  margin-top: 20px;
+}
+
+/* PRINCIPAL */
+main{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.principal { 
+  background-color: #e2e1e1;
+  min-width: 360px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.principal h2{
+  padding-left: 50px;
+  margin: 10px 50px 10px 0px ;
+  border-bottom: 3px solid #262739;
+}
+.cajadecajas{
+  width: 100%;  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #333;
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: space-between;
+} 
+div.caja{
+  width: 50%;
+  min-width: 450px; 
+  color: white; 
+  height: 230px;  
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid black;
+}
+.caja:hover{
+  border: 5px solid #F2B632;
+}
+.caja img{     
+    min-width: 300px;     
+}
+.caja div{ 
+    
+  min-width: 100px;   
+  padding: 20px;   
+}
+.caja:nth-of-type(1){  
+  background-color:#262739;    
+}
+.caja:nth-of-type(2){    
+  background-color: #265C69;  
+}
+.boxnoticias{
+  background-color: #677077;
+  padding: 10px;
+}
+.noticias{
+  margin: 10px 50px 10px 50px;
+  background-color: #aaa;  
+  padding: 10px;
+  border-radius: 5px;
+}
+.noticias p{  
+  margin: 10px;
+  padding-right: 30px;
+}
+
+/*LATERALDERECHO*/
+.lateralderecho {
+  color: #201D4D;
+  flex-shrink: 0;
+  width: 240px;
+  background-color: #EED193;
+  padding: 20px;
+}
+.calendario img {
+  background-color: #aaa;
+  width: 200px;
+  height: 200px;
+  
+  
+}
+.evento {
+  background-color: white;
+  width: 200px;
+  height: 60px;
+  padding: 5px;
+  border: 3px solid #156BAE; 
+  border-radius: 10px;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  display: flex; 
+  justify-content: flex-end; 
+  padding-right: 60px;
+  flex-wrap: nowrap;   
+  background: #262739;
+  color: #F2B632;
+}
+.footer div{
+  font-size: 0.6em;  
+  min-width: 70px;
+  width: 100px;
+  padding-left: 20px;
+  border-left: 1px solid #F2B632;
+  /* border: 1px solid black; */
+}
+.footer div:first-of-type{
+  margin-right: 20%;
+  border-left: none;
+}
+.footer img{  
+  width: 80px;
+}
+.footer h3{
+  margin-bottom: 5px;
+}
+.footer p{
+  margin-left: 10px;
+}
+/* **************************** */
+/* **************************** */
+@media screen and (max-width: 500px) {
+  main{    
+    flex-wrap: wrap;
+  }
+  body {
+    width: 360px;
+    font-size: .8em;
+  }
+  /* header */
+  .header{
+    padding-left: 30px;
+    width: 100%;
+    height: 80px;
+    flex-wrap: wrap;
+  }
+  .header div:first-of-type { 
+    padding-top: 10px;
+    min-width: 0px;   
+    width: 30%;
+  }  
+  #logo{
+    width: 100%;
+  }
+  #buscador{
+    margin-left: 5px;
+    width: 60%;
+  }
+  #foto{
+    display: none;
+  }
+
+/* navegacion */
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+  }
+  /* panelacceso */
+  .panelacceso {
+    width: 100%;
+    background-color: #677077;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 200px;  
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+   .botonacceso {     
+    text-align: center;
+    border-radius: 5%;
+    margin: 2px;   
+    min-width: 0px;
+    width: 30%;
+    padding: 10px;
+  }
+  .colorfondo {
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;      
+  }  
+  .botonacceso h3 {
+    font-size: 1em;
+    padding-top: 20px;
+    height: 30%;    
+    margin: 5px;
+    margin-bottom: 8px;
+  }  
+  .botonacceso img {
+    margin-top: 10px;
+    text-align: center;
+    width: 60%;
+  }
+  /* MAIN */
+  .cajadecajas{     
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
+  } 
+  div.caja{
+    min-width: 0px;
+    width: 100%;    
+    height: 240px;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .caja img{ 
+    min-width: none;
+      width: 20px;    
+  }
+  .caja div{        
+    min-width: none;
+    padding: 20px;   
+  }
+  .boxnoticias{    
+    padding: 2px;
+  }
+  .noticias{
+    margin: 10px 30px 10px 30px;
+    background-color: #aaa;
+    
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .noticias p{  
+    margin: 5px;
+    padding-right: 10px;
+  }
+  /*LATERALDERECHO*/
+  .lateralderecho {  
+    padding-left: 20px;
+    width: 100%;  
+    padding: 50px;
+    display: block;
+    flex-wrap: wrap;    
+  }
+  .lateralderecho img{
+    display: block;
+    margin: auto;
+  }
+  
+  .evento {
+    display: block;
+    justify-self: center;  
+    width: 100%;
+    padding: 10px;
+  }
+  .footer {  
+    padding-right: 10px;  
+  }
+}
